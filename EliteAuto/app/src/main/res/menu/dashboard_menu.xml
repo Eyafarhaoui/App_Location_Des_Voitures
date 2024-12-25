@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Nom de l'application -->
+    <item
+        android:id="@+id/app_name"
+        android:title="EliteAuto"
+        android:textColor="@android:color/black"
+        android:enabled="false"></item>
+
+    <!-- Bouton pour rediriger vers MainActivity -->
+    <item
+        android:id="@+id/action_home"
+        android:title="Accueil"
+        android:textColor="@android:color/black" />
+</menu>

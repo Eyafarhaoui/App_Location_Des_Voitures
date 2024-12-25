@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Image de la voiture -->
+        <ImageView
+            android:id="@+id/imageVoiture"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:transitionName="imageVoiture"/>
+
+        <!-- Conteneur pour les informations -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Marque et modèle de la voiture -->
+            <TextView
+                android:id="@+id/textMarqueModele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Prix de la voiture -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_euro"
+                    app:tint="@android:color/holo_green_dark"/>
+                <TextView
+                    android:id="@+id/textPrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Disponibilité de la voiture -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_calendar"/>
+                <TextView
+                    android:id="@+id/textDisponibilites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Bouton Consulter -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonConsulter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consulter"
+                android:layout_marginTop="16dp"
+
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewAvis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avis"
+            android:layout_marginTop="16dp"
+
+            app:iconGravity="textStart"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EliteAuto</string>
+    <string name="facebook_app_id">851462143702467</string>
+    <string name="fb_login_protocol_scheme">fb851462143702467</string>
+    <string name="facebook_client_token">dc03b6b632f9891777ae857a7e260589</string>
+</resources>
